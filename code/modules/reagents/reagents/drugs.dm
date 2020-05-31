@@ -13,7 +13,7 @@
 
 /datum/reagent/drug/space_drugs
 	name = "Space drugs"
-	id = "space_drugs"
+	id = SPACEDRUGS
 	description = "An illegal chemical compound used as drug."
 	taste_description = "bitterness"
 	taste_mult = 0.4
@@ -36,7 +36,7 @@
 
 /datum/reagent/drug/serotrotium
 	name = "Serotrotium"
-	id = "serotrotium"
+	id = SEROTROTIUM
 	description = "A chemical compound that promotes concentrated production of the serotonin neurotransmitter in humans."
 	taste_description = "bitterness"
 	reagent_state = LIQUID
@@ -55,7 +55,7 @@
 
 /datum/reagent/drug/cryptobiolin
 	name = "Cryptobiolin"
-	id = "cryptobiolin"
+	id = CRYPTOBIOLIN
 	description = "Cryptobiolin causes confusion and dizzyness."
 	taste_description = "sourness"
 	reagent_state = LIQUID
@@ -72,7 +72,7 @@
 
 /datum/reagent/drug/impedrezene
 	name = "Impedrezene"
-	id = "impedrezene"
+	id = IMPEDREZENE
 	description = "Impedrezene is a narcotic that impedes one's ability by slowing down the higher brain cell functions."
 	taste_description = "numbness"
 	reagent_state = LIQUID
@@ -93,7 +93,7 @@
 
 /datum/reagent/drug/mindbreaker
 	name = "Mindbreaker Toxin"
-	id = "mindbreaker"
+	id = MINDBREAKER
 	description = "A powerful hallucinogen, it can cause fatal effects in users."
 	taste_description = "sourness"
 	reagent_state = LIQUID
@@ -107,7 +107,7 @@
 
 /datum/reagent/drug/psilocybin
 	name = "Psilocybin"
-	id = "psilocybin"
+	id = PSILOCYBIN
 	description = "A strong psycotropic derived from certain species of mushroom."
 	taste_description = "mushroom"
 	color = "#E700E7"
@@ -151,7 +151,7 @@
 
 /datum/reagent/drug/nicotine
 	name = "Nicotine"
-	id = "nicotine"
+	id = NICOTINE
 	description = "A highly addictive stimulant extracted from the tobacco plant."
 	taste_description = "pepper"
 	reagent_state = LIQUID
@@ -176,7 +176,7 @@
 
 /datum/reagent/drug/hyperzine
 	name = "Hyperzine"
-	id = "hyperzine"
+	id = HYPERZINE
 	description = "Hyperzine is a highly effective, long lasting, muscle stimulant."
 	taste_description = "acid"
 	reagent_state = LIQUID
@@ -199,7 +199,7 @@
 
 /datum/reagent/drug/sanguinum
 	name = "Sanguinum"
-	id = "sanguinum"
+	id = SANGIUNUM
 	description = "Forces bone marrow to produce more blood than usual. Have irritating side effects"
 	taste_description = "metal"
 	reagent_state = LIQUID

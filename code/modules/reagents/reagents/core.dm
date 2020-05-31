@@ -1,7 +1,7 @@
 /datum/reagent/organic/blood
 	data = new/list("donor" = null, "viruses" = null, "species" = "Human", "blood_DNA" = null, "blood_type" = null, "blood_colour" = "#A10808", "resistances" = null, "trace_chem" = null, "antibodies" = list(), "ling" = null)
 	name = "Blood"
-	id = "blood"
+	id = BLOOD
 	reagent_state = LIQUID
 	metabolism = REM * 5
 	color = "#C80000"
@@ -17,7 +17,7 @@
 	if(data && data["blood_colour"])
 		color = data["blood_colour"]
 	return
-	
+
 /datum/reagent/organic/blood/get_data() // Just in case you have a reagent that handles data differently.
 	var/t = data.Copy()
 	if(t["virus2"])
@@ -73,7 +73,7 @@
 	data = list("antibodies"=list())
 	name = "Antibodies"
 	taste_description = "slime"
-	id = "antibodies"
+	id = ANTIBODIES
 	reagent_state = LIQUID
 	color = "#0050F0"
 
@@ -85,7 +85,7 @@
 #define WATER_LATENT_HEAT 19000 // How much heat is removed when applied to a hot turf, in J/unit (19000 makes 120 u of water roughly equivalent to 4L)
 /datum/reagent/water
 	name = "Water"
-	id = "water"
+	id = WATER
 	description = "A ubiquitous chemical substance that is composed of hydrogen and oxygen."
 	reagent_state = LIQUID
 	color = "#0064C877"
@@ -96,7 +96,7 @@
 	glass_desc = "The father of all refreshments."
 	nerve_system_accumulations = 0
 	reagent_type = "Water"
-	
+
 /datum/reagent/water/touch_turf(var/turf/simulated/T)
 	if(!istype(T))
 		return TRUE
@@ -156,7 +156,7 @@
 
 /datum/reagent/toxin/fuel
 	name = "Welding fuel"
-	id = "fuel"
+	id = FUEL
 	description = "Required for welders. Flamable."
 	taste_description = "gross metal"
 	reagent_state = LIQUID

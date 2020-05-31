@@ -1,6 +1,6 @@
 /datum/reagent/acetone
 	name = "Acetone"
-	id = "acetone"
+	id = ACETONE
 	description = "A colorless liquid solvent used in chemical synthesis."
 	taste_description = "acid"
 	reagent_state = LIQUID
@@ -30,7 +30,7 @@
 
 /datum/reagent/metal/aluminum
 	name = "Aluminum"
-	id = "aluminum"
+	id = ALUMINUM
 	taste_description = "metal"
 	taste_mult = 1.1
 	description = "A silvery white and ductile member of the boron group of chemical elements."
@@ -39,7 +39,7 @@
 
 /datum/reagent/toxin/ammonia
 	name = "Ammonia"
-	id = "ammonia"
+	id = AMMONIA
 	taste_description = "mordant"
 	taste_mult = 2
 	description = "A caustic substance commonly used in fertilizer or household cleaners."
@@ -52,7 +52,7 @@
 
 /datum/reagent/carbon
 	name = "Carbon"
-	id = "carbon"
+	id = CARBON
 	description = "A chemical element, the builing block of life."
 	taste_description = "sour chalk"
 	taste_mult = 1.5
@@ -81,14 +81,14 @@
 
 /datum/reagent/metal/copper
 	name = "Copper"
-	id = "copper"
+	id = COPPER
 	description = "A highly ductile metal."
 	taste_description = "copper"
 	color = "#6E3B08"
 
 /datum/reagent/ethanol
 	name = "Ethanol" //Parent class for all alcoholic reagents.
-	id = "ethanol"
+	id = ETHANOL
 	description = "A well-known alcohol with a variety of applications."
 	taste_description = "pure alcohol"
 	reagent_state = LIQUID
@@ -182,7 +182,7 @@
 
 /datum/reagent/toxin/hydrazine
 	name = "Hydrazine"
-	id = "hydrazine"
+	id = HYDRAZINE
 	description = "A toxic, colorless, flammable liquid with a strong ammonia-like odor, in hydrate form."
 	taste_description = "sweet tasting metal"
 	reagent_state = LIQUID
@@ -204,7 +204,7 @@
 
 /datum/reagent/metal/iron
 	name = "Iron"
-	id = "iron"
+	id = IRON
 	description = "Pure iron is a metal."
 	taste_description = "metal"
 	reagent_state = SOLID
@@ -230,7 +230,7 @@
 
 /datum/reagent/metal/mercury
 	name = "Mercury"
-	id = "mercury"
+	id = MERCURY
 	description = "A chemical element."
 	taste_mult = 0 //mercury apparently is tasteless. IDK
 	reagent_state = LIQUID
@@ -245,7 +245,7 @@
 
 /datum/reagent/phosphorus
 	name = "Phosphorus"
-	id = "phosphorus"
+	id = PHOSPHORUS
 	description = "A chemical element, the backbone of biological energy carriers."
 	taste_description = "vinegar"
 	reagent_state = SOLID
@@ -255,7 +255,7 @@
 
 /datum/reagent/metal/potassium
 	name = "Potassium"
-	id = "potassium"
+	id = POTASSIUM
 	description = "A soft, low-melting solid that can easily be cut with a knife. Reacts violently with water."
 	taste_description = "sweetness" //potassium is bitter in higher doses but sweet in lower ones.
 	reagent_state = SOLID
@@ -269,7 +269,7 @@
 
 /datum/reagent/metal/radium
 	name = "Radium"
-	id = "radium"
+	id = RADIUM
 	description = "Radium is an alkaline earth metal. It is extremely radioactive."
 	taste_description = "the color blue, and regret"
 	reagent_state = SOLID
@@ -297,7 +297,7 @@
 
 /datum/reagent/acid
 	name = "Sulphuric acid"
-	id = "sacid"
+	id = SACID
 	description = "A very corrosive mineral acid with the molecular formula H2SO4."
 	taste_description = "acid"
 	reagent_state = LIQUID
@@ -384,7 +384,7 @@
 
 /datum/reagent/acid/hydrochloric //Like sulfuric, but less toxic and more acidic.
 	name = "Hydrochloric Acid"
-	id = "hclacid"
+	id = HCLACID
 	description = "A very corrosive mineral acid with the molecular formula HCl."
 	taste_description = "stomach acid"
 	reagent_state = LIQUID
@@ -394,7 +394,7 @@
 
 /datum/reagent/silicon
 	name = "Silicon"
-	id = "silicon"
+	id = SILICON
 	description = "A tetravalent metalloid, silicon is less reactive than its chemical analog carbon."
 	reagent_state = SOLID
 	color = "#A8A8A8"
@@ -402,7 +402,7 @@
 
 /datum/reagent/metal/sodium
 	name = "Sodium"
-	id = "sodium"
+	id = SODIUM
 	description = "A chemical element, readily reacts with water."
 	taste_description = "salty metal"
 	reagent_state = SOLID
@@ -410,7 +410,7 @@
 
 /datum/reagent/organic/sugar
 	name = "Sugar"
-	id = "sugar"
+	id = SUGAR
 	description = "The organic compound commonly known as table sugar and sometimes called saccharose. This white, odorless, crystalline powder has a pleasing, sweet taste."
 	taste_description = "sugar"
 	taste_mult = 1.8
@@ -425,7 +425,7 @@
 
 /datum/reagent/sulfur
 	name = "Sulfur"
-	id = "sulfur"
+	id = SULFUR
 	description = "A chemical element with a pungent smell."
 	taste_description = "old eggs"
 	reagent_state = SOLID
@@ -434,7 +434,7 @@
 
 /datum/reagent/metal/tungsten
 	name = "Tungsten"
-	id = "tungsten"
+	id = TUNGSTEN
 	description = "A chemical element, and a strong oxidising agent."
 	taste_mult = 0 //no taste
 	reagent_state = SOLID

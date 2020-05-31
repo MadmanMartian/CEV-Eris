@@ -43,7 +43,7 @@
 
 /datum/reagent/nanites/capped
 	name = "Raw Industrial Nanobots"
-	id = "nanites"
+	id = NANITEBASE
 	description = "Microscopic construction robots. Useless without programming"
 	heating_point = null
 	heating_products = null
@@ -53,7 +53,7 @@
 
 /datum/reagent/nanites/dead
 	name = "Broken Nanobots"
-	id = "nanodead"
+	id = DEADNANITE
 	description = "Broken microscopic construction robots."
 	taste_description = "slimey metal"
 	color = "#535E66"
@@ -73,7 +73,7 @@
 
 /datum/reagent/nanites/uncapped
 	name = "Raw Uncapped Nanobots"
-	id = "uncap nanites"
+	id = UNCAPNANITE
 	description = "Microscopic construction robots with safety overridden. Valuable, but useless without programming."
 	heating_point = null
 	heating_products = null
@@ -85,7 +85,7 @@
 
 /datum/reagent/nanites/arad
 	name = "A-rad"
-	id = "arad nanites"
+	id = ARADNANITE
 	description = "Microscopic construction robots programmed to aid body with radiation effects."
 
 /datum/reagent/nanites/arad/will_occur(var/mob/living/carbon/M, var/alien, var/location)
@@ -100,7 +100,7 @@
 
 /datum/reagent/nanites/implant_medics
 	name = "Implantoids"
-	id = "implant nanites"
+	id = IMPLNANITE
 	description = "Microscopic construction robots programmed to repair implants."
 
 
@@ -142,7 +142,7 @@
 
 /datum/reagent/nanites/nantidotes
 	name = "Nantidotes"
-	id = "nantidotes"
+	id = NANTIDOTE
 	description = "Microscopic construction robots programmed to purge bloodstream from any foreign bodies, except themselves."
 
 /datum/reagent/nanites/nantidotes/will_occur(var/mob/living/carbon/M, var/alien, var/location)
@@ -161,7 +161,7 @@
 
 /datum/reagent/nanites/nanosymbiotes
 	name = "Nanosymbiotes"
-	id = "nanosymbiotes"
+	id = NANOSYMB
 	description = "Microscopic construction robots programmed to heal body cells."
 
 /datum/reagent/nanites/nanosymbiotes/will_occur(var/mob/living/carbon/M, var/alien, var/location)
@@ -177,7 +177,7 @@
 
 /datum/reagent/nanites/oxyrush
 	name = "Oxyrush"
-	id = "oxyrush"
+	id = OXYNANITE
 	description = "Microscopic construction robots programmed to keep oxygenation level stable no matter what."
 
 /datum/reagent/nanites/oxyrush/will_occur(var/mob/living/carbon/M, var/alien, var/location)
@@ -191,7 +191,7 @@
 
 /datum/reagent/nanites/trauma_control_system
 	name = "Trauma Control System"
-	id = "trauma_control_system"
+	id = TCSNANITE
 	description = "Microscopic construction robots programmed to restore vitality of damaged organs."
 
 /datum/reagent/nanites/trauma_control_system/will_occur(var/mob/living/carbon/M, var/alien, var/location)
@@ -214,7 +214,7 @@
 
 /datum/reagent/nanites/purgers
 	name = "Purgers"
-	id = "nanopurgers"
+	id = PURGNANITE
 	description = "Microscopic construction robots programmed to purge bloodstream from any nanobots."
 
 /datum/reagent/nanites/purgers/will_occur(var/mob/living/carbon/M, var/alien, var/location)
@@ -233,7 +233,7 @@
 
 /datum/reagent/nanites/uncapped/control_booster_utility
 	name = "Control Booster Utility"
-	id = "cbu"
+	id = CBUNANITE
 	description = "Microscopic construction robots programmed to enchant immensively mental capabilities."
 	heating_point = 523
 	heating_products = list("uncap nanites")
@@ -247,7 +247,7 @@
 
 /datum/reagent/nanites/uncapped/control_booster_combat
 	name = "Control Booster Combat"
-	id = "cbc"
+	id = CBCNANITE
 	description = "Microscopic construction robots programmed to enchant combat capabilites to maximum."
 	heating_point = 523
 	heating_products = list("uncap nanites")
@@ -261,7 +261,7 @@
 
 /datum/reagent/nanites/uncapped/voice_mimic
 	name = "Voice mimics"
-	id = "nanovoice"
+	id = VOICENANITE
 	description = "Microscopic construction robots programmed to change users voice. You should hit them first, just in case..."
 	var/voiceName = "Unknown"
 	heating_point = 523
@@ -273,7 +273,7 @@
 
 /datum/reagent/nanites/uncapped/dynamic_handprints
 	name = "Handyprints"
-	id = "nanohands"
+	id = HANDNANITE
 	description = "Microscopic construction robots programmed to change handprints while in bloodstream."
 	var/uni_identity
 	heating_point = 523
