@@ -30,6 +30,15 @@
  *
  * */
 
+/proc/initialize_cooking_recipes()
+	var/paths = typesof(/datum/recipe) - /datum/recipe
+	GLOB.recipe_list = list()
+
+	for(var/path in paths)
+		var/datum/recipe/R = new path()
+		GLOB.recipe_list.Add(R)
+
+
 /datum/recipe
 	var/list/reagents // example: = list("berryjuice" = 5) // do not list same reagent twice
 	var/list/items    // example: = list(/obj/item/weapon/tool/crowbar, /obj/item/weapon/welder) // place /foo/bar before /foo

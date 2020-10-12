@@ -27,12 +27,12 @@
 
 /obj/machinery/microwave/New()
 	..()
-	reagents = new/datum/reagents(100)
-	reagents.my_atom = src
+	create_reagents(100)
+
+/obj/machinery/microwave/Initialize()
+	..()
 	if (!available_recipes)
-		available_recipes = new
-		for (var/type in (typesof(/datum/recipe)-/datum/recipe))
-			available_recipes+= new type
+		available_recipes = GLOB.recipe_list.Copy()
 		acceptable_items = new
 		acceptable_reagents = new
 		for (var/datum/recipe/recipe in available_recipes)

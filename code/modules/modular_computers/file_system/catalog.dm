@@ -40,6 +40,9 @@ GLOBAL_LIST_EMPTY(all_catalog_entries_by_type)
 				if(E)
 					E.add_decomposition_from(D.type)
 
+	for(var/datum/recipe/R in GLOB.recipe_list)
+		create_catalog_entry(R, CATALOG_FOOD)
+
 	var/datum/catalog/C = GLOB.catalogs[CATALOG_REAGENTS]
 	C.associated_template = "catalog_list_reagents.tmpl"
 	C.entry_list = sortTim(C.entry_list, /proc/cmp_catalog_entry_asc)
@@ -48,6 +51,9 @@ GLOBAL_LIST_EMPTY(all_catalog_entries_by_type)
 	C.entry_list = sortTim(C.entry_list, /proc/cmp_catalog_entry_chem)
 	C = GLOB.catalogs[CATALOG_DRINKS]
 	C.associated_template = "catalog_list_drinks.tmpl"
+	C.entry_list = sortTim(C.entry_list, /proc/cmp_catalog_entry_asc)
+	C = GLOB.catalogs[CATALOG_FOOD]
+	C.associated_template = "catalog_list_food.tmpl"
 	C.entry_list = sortTim(C.entry_list, /proc/cmp_catalog_entry_asc)
 	C = GLOB.catalogs[CATALOG_ALL]
 	C.associated_template = "catalog_list_general.tmpl"
@@ -65,6 +71,8 @@ GLOBAL_LIST_EMPTY(all_catalog_entries_by_type)
 				GLOB.all_catalog_entries_by_type[thing.type] = new /datum/catalog_entry/reagent(thing)
 		else if(istype(thing, /atom))
 			GLOB.all_catalog_entries_by_type[thing.type] = new /datum/catalog_entry/atom(thing)
+		else if(istype(thing, /datum/recipe))
+			GLOB.all_catalog_entries_by_type[thing.type] = new /datum/catalog_entry/food(thing)
 		else
 			var/list/element = GLOB.catalogs[catalog_id]
 			if(!element.len)
@@ -376,4 +384,15 @@ GLOBAL_LIST_EMPTY(all_catalog_entries_by_type)
 
 	// DESCRIPTION
 	data["description"] = description
+	return data
+
+
+/datum/catalog_entry/food
+	associated_template = "catalog_entry_food.tmpl"
+	var/list/recipe_data
+
+/datum/catalog_entry/food/ui_data(mob/user, ui_key = "main")
+	var/list/data = ..()
+
+	data["recipe_data"] = recipe_data
 	return data

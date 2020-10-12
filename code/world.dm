@@ -22,7 +22,7 @@ var/global/datum/global_init/init = new ()
 	initialize_chemical_reagents()
 	initialize_chemical_reactions()
 	initialize_integrated_circuits_list()
-
+	initialize_cooking_recipes()
 	qdel(src) //we're done
 
 /datum/global_init/Destroy()
