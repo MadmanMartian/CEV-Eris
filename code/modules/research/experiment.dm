@@ -252,13 +252,6 @@ GLOBAL_LIST_EMPTY(explosion_watcher_list)
 /obj/item/device/science_tool/afterattack(obj/O, mob/living/user)
 	var/scanneddata = 0
 
-	if(istype(O,/obj/item/weapon/paper/autopsy_report))
-		var/obj/item/weapon/paper/autopsy_report/report = O
-		for(var/datum/autopsy_data/W in report.autopsy_data)
-			if(!(W.weapon in scanned_autopsy_weapons))
-				scanneddata += 1
-				scanned_autopsy_weapons += W.weapon
-
 	if(istype(O, /obj/item/weapon/paper/artifact_info))
 		var/obj/item/weapon/paper/artifact_info/report = O
 		if(report.artifact_type)
