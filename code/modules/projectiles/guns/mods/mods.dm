@@ -405,3 +405,18 @@
 		)
 	I.gun_loc_tag = GUN_SCOPE
 	I.req_gun_tags = list(GUN_SCOPE)
+
+/obj/item/weapon/gun_upgrade/mechanism/gold_plating
+	name = "Gold plating DIY kit"
+	desc = "For those who have the cash to splash out on some aesthetics."
+	icon_state = "pot_of_gold"
+	spawn_blacklisted = TRUE
+
+/obj/item/weapon/gun_upgrade/mechanism/gold_plating/New()
+	..()
+	var/datum/component/item_upgrade/I = AddComponent(/datum/component/item_upgrade)
+	I.weapon_upgrades = list(
+		GUN_UPGRADE_GOLD = TRUE
+	)
+	I.gun_loc_tag = GUN_MECHANISM
+	I.req_gun_tags = list(GUN_GOLDPLATEABLE)

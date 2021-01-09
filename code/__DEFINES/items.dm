@@ -96,6 +96,8 @@
 
 #define GUN_SOL "Is a FS CAR .25 CS \"Sol\""
 
+#define GUN_GOLDPLATEABLE "custom plate slots"
+
 // A rare, random item
 #define RANDOM_RARE_ITEM list(\
 					/obj/spawner/oddities = 8,\

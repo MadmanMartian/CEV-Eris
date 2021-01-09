@@ -718,3 +718,8 @@
 		gun_tags |= GUN_GRIP
 	if(!zoom_factor && !(slot_flags & SLOT_HOLSTER))
 		gun_tags |= GUN_SCOPE
+
+	var/icon/icon_states = new(icon)
+	var/golden_gun_icon = "[initial(icon_state)]_gold"
+	if(icon_states.IconStates().Find(golden_gun_icon))
+		gun_tags |= GUN_GOLDPLATEABLE
